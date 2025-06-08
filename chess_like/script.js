@@ -1,5 +1,6 @@
 let gridSize = 8; //en cells
-let cellSize = 100 / gridSize; // en % screen
+let cellSize = 90 / gridSize; // en % screen
+let pieceSize = 75 / gridSize; // en % screen
 
 let gameMode = "local";
 let playerColor = "white";
@@ -50,11 +51,12 @@ function createPiece(y, x) {
   var newDiv = document.createElement("div");
   newDiv.classList.add("piece");
 
-  //text
-  let t = document.createTextNode(" ");
+  // Remplacer le TextNode par un span
+  let t = document.createElement("span");
+  t.textContent = " ";
   newDiv.appendChild(t);
 
-  // t.style.fontSize = cellSize + "vh";
+  t.style.fontSize = pieceSize + "vh";
 
   //circle
   let circle = document.createElement("img");
@@ -83,7 +85,7 @@ function update() {
   for (let y = 0; y < gridSize; y++) {
     for (let x = 0; x < gridSize; x++) {
       // symbols
-      pieces[y][x].firstChild.nodeValue = symbolDB[piecesMatrix[y][x]];
+      pieces[y][x].children[0].textContent = symbolDB[piecesMatrix[y][x]];
 
       // square getColor
       if ((x + y) % 2 == 0) {
