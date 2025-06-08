@@ -1,0 +1,27 @@
+.div1 {
+  display: grid;
+  grid-area: auto;
+}
+
+.piece {
+  position: relative;
+  font-size: 90px;
+  text-align: center;
+
+  z-index: 1;
+
+  user-select: none;
+  -webkit-user-select: none; /* Pour compatibilité Chrome/Safari */
+  -moz-user-select: none; /* Pour compatibilité Firefox */
+  -ms-user-select: none; /* Pour compatibilité IE/Edge */
+}
+
+.piece img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* adapte la taille à la div */
+  height: 100%; /* adapte la taille à la div */
+  pointer-events: none; /* l'image ne bloque pas les clics */
+  z-index: 2;
+}

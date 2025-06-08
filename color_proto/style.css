@@ -1,0 +1,8 @@
+.cell {
+  background-color: rgb(218, 211, 211);
+}
+
+.grid-container {
+  display: grid;
+  grid-area: auto;
+}

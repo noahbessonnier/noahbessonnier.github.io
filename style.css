@@ -1,0 +1,11 @@
+.btn {
+  background-color: rgb(150, 185, 174);
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
