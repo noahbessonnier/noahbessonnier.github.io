@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button style="width: 30%; height: 100vh" id="marie" onclick="roulette(0)">
+      marie
+    </button>
+    <button style="width: 30%; height: 100vh" id="noah" onclick="roulette(1)">
+      noah
+    </button>
+    <button style="width: 30%; height: 100vh" id="lucas" onclick="roulette(2)">
+      lucas
+    </button>
+    <script>
+      let remaining = [6, 6, 6];
+      let names = ["marie", "noah", "lucas"];
+
+      function roulette(id) {
+        let rn = Math.floor(Math.random() * remaining[id]) + 1;
+        if (rn == 1) {
+          alert(names[id] + " a perdu");
+        }
+        remaining[id]--;
+
+        document.getElementById(names[id]).textContent =
+          names[id] + " encore " + remaining[id] + " chances";
+      }
+    </script>
+  </body>
+</html>
