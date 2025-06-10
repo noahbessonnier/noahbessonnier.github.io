@@ -397,11 +397,66 @@ function pawnShowCircles(y, x) {
     ) {
       //piece adverse
       circlesMatrix[y + dir][x + i] = 1;
-    } else {
-      //piece alliee ou rien
-      circlesMatrix[y + dir][x + i] = 0;
     }
   }
+}
+
+function inChess(color) {
+  let kingX;
+  let kingY;
+
+  let colorDif = 0;
+  if (color == "black") {
+    colorDif = 6;
+  }
+
+  for (let y = 0; y < gridSize; y++) {
+    for (let x = 0; x < gridSize; x++) {
+      if (piecesMatrix[y][x] == 1 + colorDif) {
+        kingX = x;
+        kingY = y;
+      }
+    }
+  }
+
+  resetCircle();
+  for (let y = 0; y < gridSize; y++) {
+    for (let x = 0; x < gridSize; x++) {
+      //tower
+      if (piecesMatrix[y][x] == 9 - colorDif) {
+        towerShowCircles(y, x, 1);
+        towerShowCircles(y, x, -1);
+      }
+      //bishop
+      if (piecesMatrix[y][x] == 10 - colorDif) {
+        bishopShowCircles(y, x, 1);
+        bishopShowCircles(y, x, -1);
+      }
+      //queen
+      if (piecesMatrix[y][x] == 8 - colorDif) {
+        queenShowCircles(y, x, 1);
+        queenShowCircles(y, x, -1);
+      }
+      //knight
+      if (piecesMatrix[y][x] == 11 - colorDif) {
+        knightShowCircles(y, x);
+      }
+      //king
+      if (piecesMatrix[y][x] == 7 - colorDif) {
+        kingShowCircles(y, x);
+      }
+      //pawn
+      if (piecesMatrix[y][x] == 12 - colorDif) {
+        pawnShowCircles(y, x);
+      }
+    }
+  }
+
+  if (circlesMatrix[kingY][kingX] == 1) {
+    console.log("echec");
+  }
+
+  update();
 }
 
 //noir
