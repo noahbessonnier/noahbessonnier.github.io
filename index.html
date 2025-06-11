@@ -8,20 +8,47 @@
     <!-- Ajout du lien CSS -->
   </head>
   <body>
-    <h1>Game Hub Abbanero</h1>
+    <img class="logo" src="abbanero logo.png" alt="" />
+    <div style="margin: 70px">
+      <h1 class="page-title">Abbanero Studio</h1>
+      <h2 class="page-subtitle">Catalogue de Jeux gratuits en ligne</h2>
+    </div>
     <div class="flex-container">
-      <button class="btn" onclick="GoToPage('snake_like/index.html')">
-        Snake
-      </button>
-      <button class="btn" onclick="GoToPage('GOL/index.html')">
-        Conway's Game of Life
-      </button>
-      <button class="btn" onclick="GoToPage('chess_like/index.html')">
-        Chess
-      </button>
-      <button class="btn" onclick="GoToPage('cloud_platformer/index.html')">
-        Cloud Mask
-      </button>
+      <div class="card" onclick="GoToPage('snake_like/index.html')">
+        <div class="card-details">
+          <p class="text-title">Snake</p>
+          <p class="text-body">un jeu de serpent</p>
+          <img class="image-icon" src="snake.png" alt="" />
+        </div>
+        <button class="card-button">Play</button>
+      </div>
+
+      <div class="card" onclick="GoToPage('chess_like/index.html')">
+        <div class="card-details">
+          <p class="text-title">Chess</p>
+          <p class="text-body">Échiquier en locale</p>
+          <img class="image-icon" src="chess.png" alt="" />
+        </div>
+        <button class="card-button">Play</button>
+      </div>
+
+      <div class="card" onclick="GoToPage('GOL/index.html')">
+        <div class="card-details">
+          <p class="text-title">Game Of Life</p>
+          <p class="text-body">Le jeu de la vie de Conway</p>
+          <img class="image-icon" src="GOL.png" alt="" />
+        </div>
+        <button class="card-button">Play</button>
+      </div>
+
+      <div class="card" onclick="GoToPage('cloud_platformer/index.html')">
+        <div class="card-details">
+          <p class="text-title">Cloud Mask</p>
+          <p class="text-body">Platformer 2D au paradis</p>
+          <img class="image-icon" src="cloud-mask.png" alt="" />
+        </div>
+        <button class="card-button">Play</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

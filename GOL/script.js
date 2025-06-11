@@ -39,14 +39,23 @@ for (let i = 0; i < gridSize; i++) {
   }
 }
 
+function randomStart() {
+  for (let i = 0; i < gridSize; i++) {
+    for (let j = 0; j < gridSize; j++) {
+      grid[i][j] = Math.round(Math.random());
+    }
+  }
+  updateCanvas();
+}
+
 // update each cellule state in canvas
 function updateCanvas() {
   for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
       if (grid[i][j] == 1) {
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "rgb(197, 195, 195)";
       } else {
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "rgba(61, 60, 60, 0.93)";
       }
 
       ctx.beginPath();

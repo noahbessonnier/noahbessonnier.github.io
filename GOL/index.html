@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOL</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas
-      id="myCanvas"
-      width="800"
-      height="800"
-      style="border: 1px solid #000000"
-    ></canvas>
-    <button onclick="pauseSwap()">pause</button>
-    <button onclick="clearGrid()">clear</button>
-    <label for="tick-rate">speed : </label>
-    <input type="number" id="tick-rate" min="0" value="1" />
-    <p id="gen-text"></p>
+    <div>
+      <canvas
+        id="myCanvas"
+        width="768"
+        height="768"
+        style="border: 1px solid #0000002c"
+      ></canvas>
+    </div>
+    <div>
+      <button onclick="pauseSwap()">Pause</button>
+      <button onclick="clearGrid()">Clear</button>
+      <button onclick="randomStart()">Random Start</button>
+      <label for="tick-rate">speed : </label>
+      <input type="number" id="tick-rate" min="0" value="5" />
+      <p id="gen-text"></p>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
