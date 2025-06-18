@@ -36,10 +36,36 @@
         </span>
       </button>
 
-      <button onclick="clearGrid()">Clear</button>
-      <button onclick="randomStart()">Random Start</button>
-      <label for="tick-rate">speed : </label>
-      <input type="number" id="tick-rate" min="0" value="5" />
+      <button onclick="clearGrid()" class="button">
+        <div class="button-overlay"></div>
+        <span
+          >Clear
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 53 58"
+            height="58"
+            width="53"
+          >
+            <path
+              stroke-width="9"
+              stroke="currentColor"
+              d="M0 0 53 58M0 58 53 0"
+            ></path>
+          </svg>
+        </span>
+      </button>
+
+      <button onclick="randomStart()" class="button">
+        <div class="button-overlay"></div>
+        <span>Random Start </span>
+      </button>
+
+      <div class="text-speed">
+        <span>speed : </label>
+        <input type="number" id="tick-rate" min="0" value="5" />
+      </div>
+
       <p id="gen-text"></p>
     </div>
   </body>
