@@ -3,6 +3,12 @@
   grid-area: auto;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #001b2e;
+}
+
 .piece {
   position: relative;
   font-size: 90px;

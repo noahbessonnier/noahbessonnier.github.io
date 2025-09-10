@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap");
+
+:root {
+  --main-bg: #294048;
+  --main-text: #e9e3e3;
+  --second-text: #e6e2d2;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--main-text);
+  margin: 20px 0;
+  width: 60%;
+}

@@ -1,48 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Story+Script&display=swap");
 
+/* container */
 .flex-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 0.5em;
+  margin-bottom: 2em;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #202020;
+  background-color: #131313;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* title */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+  padding: 2em 0;
+  width: 99vw;
+
+  /* background: linear-gradient(180deg, #e2d3ac 0%, #6d757700 100%); */
+  background-color: #1f1e1e;
 }
 
 .logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 120px;
+  height: 160px;
 }
 
 .page-title {
-  font-size: 3em;
+  font-size: 3.5em;
+  font-weight: bold;
   text-align: center;
   font-family: "Cascadia Mono";
-  color: #f18723;
+  color: #ed8f1f;
   margin: 10px;
 }
 
 .page-subtitle {
   font-family: "Cascadia Mono";
   font-size: 1.86em;
+  font-weight: 100;
   text-align: center;
-  color: #e9e3e3;
+  color: rgb(219, 223, 228);
   margin: 10px;
 }
 
+/* project group */
+.group-title {
+  margin: 0.5em;
+  text-align: left;
+  color: #ed8f1f;
+  font-size: 1.86em;
+  font-family: "Cascadia Mono";
+  font-weight: 600;
+
+  grid-column: 1 / -1; /* Prend toute la première ligne */
+  display: flex;
+  align-items: center;
+}
+svg {
+  margin: 0 0.5em;
+  fill: #ed8f1f;
+
+  height: 30px;
+}
+
+/* card */
 .card {
   margin: 10px;
-  width: 190px;
+  width: 250px;
   height: 274px;
   border-radius: 20px;
-  background: #2b2a2a;
+  background: #131313;
   position: relative;
   padding: 1.8rem;
-  border: 2px solid #4e4d4d;
+  border: 2px solid #575451;
   transition: 0.5s ease-out;
   overflow: visible;
 }
@@ -60,7 +109,7 @@ body {
   width: 60%;
   border-radius: 1rem;
   border: none;
-  background-color: #f18723;
+  background-color: #ed8f1f;
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -78,20 +127,21 @@ body {
 
 /*Text*/
 .text-title {
-  color: aliceblue;
+  color: rgb(219, 223, 228);
   font-size: 1.5em;
   font-weight: bold;
+  margin: 0.5em 0;
 }
 
 .image-icon {
-  width: 90%;
+  width: 60%;
   border-radius: 7px;
 }
 
 /*Hover*/
 .card:hover {
-  border-color: #f18723;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  border-color: #ed8f1f;
+  box-shadow: 0 4px 18px 0 #ed8f1f;
 }
 
 .card:hover .card-button {

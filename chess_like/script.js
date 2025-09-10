@@ -24,8 +24,8 @@ let symbolDB = [
 
 let circleDB = [" ", "circle.png"];
 
-let blackColor = "rgb(151, 133, 133)";
-let whiteColor = "rgb(238, 238, 238)";
+let blackColor = "#41718C";
+let whiteColor = "rgb(240, 240, 240)";
 
 let pieces = []; // ♔ ♕ ♖ <== divs
 let piecesMatrix = []; // 0 1 2 3 <== id
@@ -95,7 +95,7 @@ function update() {
       }
 
       if (selectedPiece.x == x && selectedPiece.y == y) {
-        pieces[y][x].style.backgroundColor = "rgb(255, 8, 8)";
+        pieces[y][x].style.backgroundColor = "#89CE94";
       }
 
       // circle
