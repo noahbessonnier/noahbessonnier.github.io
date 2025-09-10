@@ -27,7 +27,7 @@ body {
 }
 
 /* title */
-header {
+.header-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,30 @@ header {
 
   /* background: linear-gradient(180deg, #e2d3ac 0%, #6d757700 100%); */
   background-color: #1f1e1e;
+}
+
+.header-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  z-index: 100;
+  padding: 1em 0;
+  text-align: center;
+  background-color: #131313;
+}
+
+.header-nav a {
+  padding: 1em 2em;
+  margin: 0;
+  background-color: #131313;
+  color: rgb(219, 223, 228);
+  transition: 0.5s ease-out;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  background-color: #2e2e2e;
 }
 
 .logo {
