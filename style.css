@@ -172,3 +172,29 @@ svg {
   transform: translate(-50%, 50%);
   opacity: 1;
 }
+
+/* formulaire */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 2em auto;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.contact-form button {
+  background: #ed8f1f;
+  color: #fff;
+  border: none;
+  padding: 0.7em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #c96e0c;
+}
