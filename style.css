@@ -106,7 +106,7 @@ svg {
   height: 30px;
 }
 
-/* card */
+/* card ---------------------------------------------------------------*/
 .card {
   margin: 10px;
   width: 250px;
@@ -173,7 +173,75 @@ svg {
   opacity: 1;
 }
 
-/* formulaire */
+/* portfolio card  -------------------------------------------------------------*/
+.PF-card {
+  margin: 10px;
+  width: 40vw;
+  height: fit-content;
+  border-radius: 20px;
+  background: #131313;
+  position: relative;
+  padding: 1em;
+  border: 2px solid #575451;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.PF-card-details {
+  color: black;
+  height: 100%;
+  gap: 0.3em;
+  display: grid;
+  place-content: left;
+}
+
+.PF-card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #ed8f1f;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+/*Text*/
+.PF-text-body {
+  color: rgb(134, 134, 134);
+  margin: 10px;
+}
+
+.PF-text-title {
+  color: rgb(219, 223, 228);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.PF-image-icon {
+  width: 90%;
+  border-radius: 7px;
+}
+
+/*Hover*/
+.PF-card:hover {
+  border-color: #ed8f1f;
+  box-shadow: 0 4px 18px 0 #ed8f1f;
+}
+
+.PF-card:hover .PF-card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+/* formulaire --------------------------------------------------------*/
 .contact-form {
   display: flex;
   flex-direction: column;

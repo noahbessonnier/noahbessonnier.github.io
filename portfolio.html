@@ -23,15 +23,29 @@
       </div>
     </header>
 
-    <form class="contact-form" action="#" method="post">
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required />
+    <div class="grid-container">
+      <div
+        class="PF-card"
+        onclick="GoToPage('https://portfolio-noah-bessonnier.my.canva.site/game-dev')"
+      >
+        <div class="PF-card-details">
+          <p class="PF-text-title">Présentation Jeux Vidéos</p>
+          <img class="PF-image-icon" src="assets/cloud-mask.png" alt="" />
+        </div>
+        <!-- <button class="PF-card-button">Go</button> -->
+      </div>
 
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Envoyer</button>
-    </form>
+      <div
+        class="PF-card"
+        onclick="GoToPage('https://portfolio-noah-bessonnier.my.canva.site/dessin')"
+      >
+        <div class="PF-card-details">
+          <p class="PF-text-title">Présentation Dessin</p>
+          <img class="PF-image-icon" src="assets/dessin.jpg" alt="" />
+        </div>
+        <!-- <button class="PF-card-button">Go</button> -->
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

@@ -1,3 +1,3 @@
 function GoToPage(pagePath) {
-  window.location.href = pagePath;
+  window.open(pagePath, "_blank");
 }
