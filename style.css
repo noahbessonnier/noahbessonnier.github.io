@@ -176,6 +176,7 @@ svg {
 /* portfolio card  -------------------------------------------------------------*/
 .PF-card {
   margin: 10px;
+  margin-bottom: 20px;
   width: 40vw;
   height: fit-content;
   border-radius: 20px;
@@ -226,7 +227,7 @@ svg {
 }
 
 .PF-image-icon {
-  width: 90%;
+  width: 99%;
   border-radius: 7px;
 }
 
