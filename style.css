@@ -173,6 +173,98 @@ svg {
   opacity: 1;
 }
 
+.empty-card {
+  margin: 10px;
+  width: 250px;
+  height: 274px;
+  padding: 1.8rem;
+}
+
+.beta {
+  transform: translate(-50%, 125%);
+  width: fit-content;
+  border-radius: 2rem;
+  border: none;
+  background-color: #2daddc;
+  color: #e9e2e2;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+
+  top: 0;
+  /* opacity: 0; */
+  /* transition: 0.3s ease-out; */
+}
+
+/* master carc ----------------------------------------------------------- */
+.master-card {
+  margin: 10px;
+  width: 925px;
+  height: 274px;
+  border-radius: 20px;
+  background: #131313;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #575451;
+  transition: 0.5s ease-out;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.master-card-details {
+  color: black;
+  flex-grow: 3;
+  padding: 1.8rem;
+}
+
+.master-card-button {
+  transform: translate(-50%, 125%);
+  width: 20%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #ed8f1f;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.master-text-body {
+  color: rgb(134, 134, 134);
+  margin: 10px;
+}
+
+/*Text*/
+.master-text-title {
+  color: rgb(219, 223, 228);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.8em 0;
+}
+
+.master-image-icon {
+  width: auto;
+  height: 100%;
+  border-radius: 7px;
+}
+
+/*Hover*/
+.master-card:hover {
+  border-color: #ed8f1f;
+  box-shadow: 0 4px 18px 0 #ed8f1f;
+}
+
+.master-card:hover .master-card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
 /* portfolio card  -------------------------------------------------------------*/
 .PF-card {
   margin: 10px;
