@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fish rod</title>
+    <link rel="icon" type="image/png" href="assets/star-favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card" id="btnDownload">
+      <div class="card-details">
+        <p class="text-title">Fish rod beta</p>
+        <p class="text-body">Un pêcheur qui ne pêchait que le matin</p>
+        <p class="text-title">Télécharger</p>
+        <!-- <img class="image-icon" src="assets/cloud-mask.png" alt="" /> -->
+      </div>
+      <button class="card-button">Download</button>
+    </div>
+
+    <div class="installation-guide">
+      <h2>Guide d'installation</h2>
+
+      <div class="steps">
+        <div class="step">
+          <p>1. Dans "Téléchargements" Extraire le contenu du dossier zip</p>
+          <img
+            src="assets/image tuto/Téléchargements _ Explorateur de fichiers 30_10_2025 19_03_08.png"
+            alt="Étape de téléchargement"
+          />
+        </div>
+
+        <div class="step">
+          <p>2. Pour lancer le jeu, ouvrez le "fish rod prototype.exe"</p>
+          <img
+            src="assets/image tuto/Capture d’écran 2025-10-30 190432.png"
+            alt="Fichiers du jeu"
+          />
+        </div>
+
+        <div class="step">
+          <p>
+            3. Lors de l'exécution, Windows peut afficher une alerte de
+            sécurité. Cliquez sur "Informations Complémantaires" "Exécuter quand
+            même"
+          </p>
+          <img
+            src="assets/image tuto/Capture d’écran 2025-10-30 190529.png"
+            alt="Alerte de sécurité"
+          />
+          <img
+            src="assets/image tuto/Capture d’écran 2025-10-30 190554.png"
+            alt="Alerte de sécurité"
+          />
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .installation-guide {
+        padding: 2rem;
+        margin: 2rem 0;
+        color: #ed8f1f;
+      }
+
+      .steps {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+      }
+
+      .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 33%;
+      }
+
+      .step img {
+        max-width: 600px;
+        width: 80%;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 1rem;
+      }
+
+      .step p {
+        font-size: 1.1rem;
+        color: #ffffff;
+      }
+    </style>
+
+    <script>
+      document.getElementById("btnDownload").addEventListener("click", () => {
+        const link = document.createElement("a");
+        link.href = "0.2 beta windows.zip"; // chemin du fichier
+        link.download = "0.2 beta windows.zip"; // nom du fichier à enregistrer
+        link.click();
+      });
+    </script>
+  </body>
+</html>
