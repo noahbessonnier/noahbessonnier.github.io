@@ -6,6 +6,13 @@
     <title>fish rod</title>
     <link rel="icon" type="image/png" href="assets/star-favicon.png" />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("KWLEDOMywicqGI8dN");
+      })();
+    </script>
   </head>
   <body>
     <div class="master-card" id="btnDownload">
@@ -93,9 +100,24 @@
     <script>
       document.getElementById("btnDownload").addEventListener("click", () => {
         const link = document.createElement("a");
-        link.href = "0.2 beta windows.zip"; // chemin du fichier
-        link.download = "0.2 beta windows.zip"; // nom du fichier à enregistrer
+        link.href = "0.2 beta windows.zip";
+        link.download = "0.2 beta windows.zip";
         link.click();
+
+        const formData = {
+          name: "Download",
+          message: "Nouveau téléchargement de Fish Rod",
+          date: new Date().toLocaleString(),
+        };
+
+        emailjs.send("service_mwkipu9", "template_u00nk2h", formData).then(
+          function (response) {
+            console.log("Email envoyé avec succès:", response);
+          },
+          function (error) {
+            console.error("Erreur d'envoi:", error);
+          }
+        );
       });
     </script>
   </body>
