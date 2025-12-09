@@ -14,17 +14,28 @@
       })();
     </script>
   </head>
-  <body>
-    <div class="master-card" id="btnDownload">
-      <div class="master-card-details">
-        <p class="master-text-title">Download</p>
-        <p class="master-text-body">Télécharger le fichier ZIP</p>
-      </div>
-      <img class="master-image-icon" src="assets/fish-rod.png" alt="" />
-      <button class="master-card-button">Download</button>
-    </div>
 
-    <div class="installation-guide">
+  <body>
+    <div
+      class="master-card"
+      id="btnDownload"
+      style="width: 500px; height: 100px"
+    >
+      <div style="padding: 0" class="master-card-details">
+        <p style="font-size: 2.5em" class="master-text-title">Download</p>
+        <!-- <p class="master-text-body">Télécharger le fichier ZIP</p> -->
+      </div>
+      <!-- <img class="master-image-icon" src="assets/fish-rod.png" alt="" /> -->
+      <!-- <button style="width: 90%" class="master-card-button">Download</button> -->
+    </div>
+    <img
+      src="assets/affiche.png"
+      alt=""
+      height="700px"
+      style="margin: 20 px; border-radius: 7px"
+    />
+
+    <div id="installation" class="installation-guide">
       <h2>Guide d'installation</h2>
 
       <div class="steps">
@@ -37,11 +48,8 @@
         </div>
 
         <div class="step">
-          <p>2. Pour lancer le jeu, ouvrez le "fish rod prototype.exe"</p>
-          <img
-            src="assets/image tuto/Capture d’écran 2025-10-30 190432.png"
-            alt="Fichiers du jeu"
-          />
+          <p>2. Pour lancer le jeu, ouvrez le "Archipel de Luna.exe"</p>
+          <img src="assets/image tuto/image.png" alt="Fichiers du jeu" />
         </div>
 
         <div class="step">
@@ -100,8 +108,8 @@
     <script>
       document.getElementById("btnDownload").addEventListener("click", () => {
         const link = document.createElement("a");
-        link.href = "0.2 beta windows.zip";
-        link.download = "0.2 beta windows.zip";
+        link.href = "Archipel de Luna 0.3.zip";
+        link.download = "Archipel de Luna 0.3.zip";
         link.click();
 
         const formData = {
@@ -118,6 +126,12 @@
             console.error("Erreur d'envoi:", error);
           }
         );
+
+        // défilement
+        const target = document.getElementById("installation");
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       });
     </script>
   </body>
