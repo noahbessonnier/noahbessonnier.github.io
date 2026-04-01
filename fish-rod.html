@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -108,8 +108,8 @@
     <script>
       document.getElementById("btnDownload").addEventListener("click", () => {
         const link = document.createElement("a");
-        link.href = "Archipel de Luna 0.3.zip";
-        link.download = "Archipel de Luna 0.3.zip";
+        link.href = "Archipel de Luna 0.4.zip";
+        link.download = "Archipel de Luna 0.4.zip";
         link.click();
 
         const formData = {
@@ -124,7 +124,7 @@
           },
           function (error) {
             console.error("Erreur d'envoi:", error);
-          }
+          },
         );
 
         // défilement
