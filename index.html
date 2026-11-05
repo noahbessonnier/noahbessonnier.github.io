@@ -1,180 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abbanero Studio</title>
-    <link rel="icon" type="image/png" href="assets/star-favicon.png" />
+    <title>Noah portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="header-nav">
-        <a href="index.html">Accueil</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+    <main id="haut">
+      <img src="assets/logo portfolioFichier 6@2x.png" alt="" width="100%" />
+
+      <div class="flex-container">
+        <div class="paragraphe-intro">
+          <h2>Mes Compétences</h2>
+          <p class="p-classic">
+            J'utilise différent logiciels depuis 5 ans durant ces 5 années, j'ai
+            pu construire mon savoir-faire.
+          </p>
+        </div>
+        <div class="paragraphe-intro">
+          <h2>Mes Etudes</h2>
+          <p class="p-classic">
+            Je suis en études d'art digital à E-Artsup ce qui complète mon
+            savoir-faire.
+          </p>
+        </div>
+      </div>
+
+      <nav class="sommaire" aria-label="Sommaire">
+        <!-- <h2>Sommaire</h2> -->
+        <div class="boutons">
+          <a class="btn" href="#logos"
+            >Logos<img
+              class="icon"
+              src="assets/icon-contents/new da logo.png"
+              alt=""
+          /></a>
+
+          <a class="btn" href="#illustrations"
+            >Illustrations<img
+              class="icon"
+              src="assets/icon-contents/combat knee kick.png"
+              alt=""
+          /></a>
+          <a class="btn" href="#modelisation-3D"
+            >Modélisation 3D<img
+              class="icon"
+              src="assets/icon-contents/voilier.png"
+              alt=""
+          /></a>
+          <a class="btn" href="#jeux-video"
+            >Jeux Vidéos<img
+              class="icon"
+              src="assets/icon-contents/full imagePlan de travail 9.png"
+              alt=""
+          /></a>
+        </div>
       </nav>
-      <div class="header-title">
-        <img class="logo" src="assets/logo-abbanero3.png" alt="" />
-        <div style="margin: 2em">
-          <h1 class="page-title">Abbanero Studio</h1>
-          <h2 class="page-subtitle">Catalogue de Jeux gratuits en ligne</h2>
-        </div>
-      </div>
-    </header>
 
-    <!-- beta             -->
-    <!-- release pr -->
-    <div class="grid-container">
-      <div class="group-title">
-        <p>Beta Testing</p>
+      <section id="logos">
+        <h2>Logos</h2>
+        <p>Voici différents projets d'identité visuelle que j'ai réalisés.</p>
+        <img
+          class="full-image"
+          src="assets/logos/full imagePlan de travail 2.png"
+          alt=""
+        />
+        <img
+          class="full-image"
+          src="assets/logos/full imagePlan de travail 3.png"
+          alt=""
+        />
+        <img
+          class="full-image"
+          src="assets/logos/full imagePlan de travail 6.png"
+          alt=""
+        />
+        <a class="retour" href="#haut">Retour au sommaire</a>
+      </section>
 
-        <svg
-          width="64px"
-          height="64px"
-          viewBox="0 -0.5 17 17"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          class="si-glyph si-glyph-arrow-up"
-          fill="#000000"
-          transform="rotate(180)"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+      <section id="illustrations">
+        <h2>Illustrations</h2>
+        <p>Voici différentes illustrations que j'ai réalisés.</p>
 
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+        <img
+          class="full-image"
+          src="assets/illustration/full imagePlan de travail 7.png"
+          alt=""
+        />
+        <img
+          class="full-image"
+          src="assets/illustration/full imagePlan de travail 8.png"
+          alt=""
+        />
 
-          <g id="SVGRepo_iconCarrier">
-            <title>1191</title>
-            <defs></defs>
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <path
-                d="M15.812,9.896 C15.587,9.896 15.361,9.834 15.162,9.699 L8.932,5.543 L2.895,9.74 C2.354,10.099 1.625,9.953 1.266,9.412 C0.905,8.873 1.051,8.142 1.592,7.783 L8.28,3.152 C8.673,2.888 9.188,2.888 9.583,3.15 L16.464,7.74 C17.005,8.099 17.152,8.832 16.792,9.371 C16.564,9.713 16.191,9.896 15.812,9.896 L15.812,9.896 Z"
-                fill="#434343"
-                class="si-glyph-fill"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </div>
+        <a class="retour" href="#haut">Retour au sommaire</a>
+      </section>
 
-      <div class="master-card" onclick="GoToPage('fish-rod.html')">
-        <div class="master-card-details">
-          <p class="master-text-title">L'Archipel</p>
-          <p class="master-text-body">
-            Balance toi de digue en digue pour atteindre ton objectif : devenir
-            Maître Pêcheur
-          </p>
-          <p class="master-text-body">
-            Découvre l'archipel de Luna dans ce Platformer 2D
-          </p>
-        </div>
-        <img class="master-image-icon" src="assets/fish-rod.png" alt="" />
-        <button class="master-card-button">Download</button>
-        <!-- <p class="beta">Démo</p> -->
-      </div>
+      <section id="modelisation-3D">
+        <h2>Modélisation 3D</h2>
+        <p>Voici différents modèles 3D que j'ai réalisés.</p>
+        <img class="full-image" src="assets/3d/3 4 photo.png" alt="" />
+        <img class="full-image" src="assets/3d/e30 3_4.png" alt="" />
+        <img class="full-image" src="assets/3d/house 2.png" alt="" />
+        <img class="full-image" src="assets/3d/voilier.png" alt="" />
+        <a class="retour" href="#haut">Retour au sommaire</a>
+      </section>
 
-      <div
-        class="card"
-        onclick="GoToPage('https://youtu.be/J94cKuzhNwY')"
-        style="width: 200px"
-      >
-        <div class="card-details">
-          <p class="text-title">Record du Monde</p>
-          <p class="text-body">Cliquer pour voir la vidéo</p>
-          <img class="image-icon" src="assets/trophy.png" alt="" />
-        </div>
-        <button class="card-button">Go</button>
-      </div>
-    </div>
+      <section id="jeux-video">
+        <h2>Jeux Vidéos</h2>
+        <p>Voici différents projet de jeu vidéo que j'ai réalisés.</p>
+        <img
+          class="full-image"
+          src="assets/game/full imagePlan de travail 9.png"
+          alt=""
+        />
+        <video
+          src="assets/game/animation cannon.mp4"
+          controls
+          width="100%"
+        ></video>
+        <img
+          class="full-image"
+          src="assets/game/full imagePlan de travail 10.png"
+          alt=""
+        />
+        <video
+          src="assets/game/vitrine 2d platformer.mp4"
+          controls
+          width="100%"
+        ></video>
 
-    <!-- release pr -->
-    <div class="grid-container">
-      <div class="group-title">
-        <p>Release Project</p>
-
-        <svg
-          width="64px"
-          height="64px"
-          viewBox="0 -0.5 17 17"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          class="si-glyph si-glyph-arrow-up"
-          fill="#000000"
-          transform="rotate(180)"
-        >
-          <g id="SVGRepo_bgCarrier" stroke-width="0" />
-
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-
-          <g id="SVGRepo_iconCarrier">
-            <title>1191</title>
-            <defs></defs>
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <path
-                d="M15.812,9.896 C15.587,9.896 15.361,9.834 15.162,9.699 L8.932,5.543 L2.895,9.74 C2.354,10.099 1.625,9.953 1.266,9.412 C0.905,8.873 1.051,8.142 1.592,7.783 L8.28,3.152 C8.673,2.888 9.188,2.888 9.583,3.15 L16.464,7.74 C17.005,8.099 17.152,8.832 16.792,9.371 C16.564,9.713 16.191,9.896 15.812,9.896 L15.812,9.896 Z"
-                fill="#434343"
-                class="si-glyph-fill"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </div>
-
-      <div class="card" onclick="GoToPage('cloud_platformer/index.html')">
-        <div class="card-details">
-          <p class="text-title">Cloud Mask</p>
-          <p class="text-body">Platformer 2D au paradis</p>
-          <img class="image-icon" src="assets/cloud-mask.png" alt="" />
-        </div>
-        <button class="card-button">Play</button>
-      </div>
-
-      <div class="card" onclick="GoToPage('seul/index.html')">
-        <div class="card-details">
-          <p class="text-title">Seul</p>
-          <p class="text-body">Platformer 2D rempli de mystères</p>
-          <img class="image-icon" src="assets/seul.png" alt="" />
-        </div>
-        <button class="card-button">Play</button>
-      </div>
-
-      <div class="card" onclick="GoToPage('snake_like/index.html')">
-        <div class="card-details">
-          <p class="text-title">Snake</p>
-          <p class="text-body">un jeu de serpent</p>
-          <img class="image-icon" src="assets/snake-like.png" alt="" />
-        </div>
-        <button class="card-button">Play</button>
-      </div>
-
-      <div class="card" onclick="GoToPage('chess_like/index.html')">
-        <div class="card-details">
-          <p class="text-title">Chess</p>
-          <p class="text-body">Échiquier en locale</p>
-          <img class="image-icon" src="assets/chess.png" alt="" />
-        </div>
-        <button class="card-button">Play</button>
-      </div>
-
-      <div class="card" onclick="GoToPage('GOL/index.html')">
-        <div class="card-details">
-          <p class="text-title">Game Of Life</p>
-          <p class="text-body">Le jeu de la vie de Conway</p>
-          <img class="image-icon" src="assets/GOL.png" alt="" />
-        </div>
-        <button class="card-button">Play</button>
-      </div>
-    </div>
-    <script src="script.js"></script>
+        <a class="retour" href="#haut">Retour au sommaire</a>
+      </section>
+    </main>
   </body>
 </html>
